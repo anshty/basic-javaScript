@@ -15,3 +15,39 @@ console.log(bigNumber);
 //reference(non primitive)
 
 //Array,Objects ,Funtions
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++
+
+
+/*
+
+#stack(primitive),heap(non primitive)
+
+*/
+
+//stack => not change real but change copyed one
+let myname ="ankit"
+let iAm=myname
+iAm="ansh"
+console.log(iAm);
+console.log(myname);
+
+//heap => heap don't use copy they have same refrance
+
+let firstperson ={
+       Name:"ankit",
+       Age:12
+}
+
+secondperson=firstperson
+ console.log(secondperson);
+
+ secondperson.name='ansh'
+ console.log(firstperson.name);//ansh
+ console.log(secondperson.name);//ansh
+
+
+
