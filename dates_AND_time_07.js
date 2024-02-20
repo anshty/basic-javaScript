@@ -40,20 +40,30 @@
 // ++++revision++
 
 
-let myTimeStamp01 = Date.now()
+// let myTimeStamp01 = Date.now()
 
-// console.log(myTimeStamp01);//time stemp from 1 jan ,1970 to present date mili second value =>1708260841823
+// // console.log(myTimeStamp01);//time stemp from 1 jan ,1970 to present date mili second value =>1708260841823
 
-// let mycreatedDateone=Date.now('2004,01,04')
-// // console.log(mycreatedDate01.getTime());
-// console.log(mycreatedDateone.getMinutes());
-console.log('hello world');
+// // let mycreatedDateone=Date.now('2004,01,04')
+// // // console.log(mycreatedDate01.getTime());
+// // console.log(mycreatedDateone.getMinutes());
+// console.log('hello world');
 
-let mycreatedDateone = new Date('01-14-2024')
-console.log(mycreatedDateone.getTime());
-console.log(Math.floor(Date .now()/1000));//time stemp from 1 jan ,1970 to present date mili second value =>1708260841823
-console.log(mycreatedDateone.getUTCMonth());
+// let mycreatedDateone = new Date('01-14-2024')
+// console.log(mycreatedDateone.getTime());
+// console.log(Math.floor(Date .now()/1000));//time stemp from 1 jan ,1970 to present date mili second value =>1708260841823
+// console.log(mycreatedDateone.getUTCMonth());
 
-mycreatedDateone.toLocaleString('default',{
-    weekday:"narrow"
-})
+// mycreatedDateone.toLocaleString('default',{
+//     weekday:"narrow"
+// })
+
+let myDate=new Date()
+console.log(myDate.getTime());
+
+
+
+let myday= Date.now('12-14-2004') //this is timestamp from 1 jan 1970 to now 
+console.log(myday);//not use .getTime in time stamp
+console.log(myday.toLocaleString('en-in'));
+console.log(myday.toString());
