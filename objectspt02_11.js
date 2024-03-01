@@ -53,7 +53,12 @@ const users=[
     }
 ]
 
-console.log(Object.keys(instaId));
-console.log(Object.values(instaId));
-console.log(Object.entries(instaId));
-console.log(instaId.hasOwnProperty('userid'));
+// console.log(Object.keys(instaId));
+// console.log(Object.values(instaId));
+// console.log(Object.entries(instaId));
+// console.log(instaId.hasOwnProperty('userid'));
+
+console.log(users.__proto__);
+
+
+// +++part3+++ destucture

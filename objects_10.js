@@ -1,5 +1,5 @@
 // singleton => is made from constructor known as singleton object(one object)
-
+//Object.create
 
 // object literal
 const objMy=Symbol("key1")
@@ -42,3 +42,14 @@ jsUser.greetingTwo= function(){
     console.log(`hello, ${this.name}`);
 }
 console.log(jsUser.greetingTwo());
+
+const alfa_data=function(){
+
+}
+
+console.log(typeof alfa_data);//function
+ beta_data=Object()
+console.log(typeof beta_data);//object
+
+const myarray=['a','b','c']
+console.log(myarray[2]);
