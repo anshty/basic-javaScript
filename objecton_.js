@@ -43,7 +43,7 @@ class_id04.Section='maths'
 const project01=[{a:1,b:2},{name:'anku',email_id:'anku@gmail.com'},]
 
 
-// console.log(project01[1].name);
+console.log(project01[1].name);
 
 
 console.log(Object.keys(class_id01));
