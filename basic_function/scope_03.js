@@ -1,6 +1,6 @@
 if(true){
     const a=10
-    console.log(a);
+    // console.log(a);
 }
 
 function myFunction(){
@@ -13,3 +13,31 @@ const obj={
 }
 // console.log(c);
 
+// +++++++nested scope ++++++++
+
+function one(){
+    const name='ankit';
+
+    function two(){
+        const myWork='insta'
+        console.log(name);
+        
+
+    }
+    // console.log(myWork);
+
+    two()
+}
+
+// one()
+
+
+if(true){
+    const username='ankit'
+     if(username==='ankit'){
+        const ide='vscode'
+        return username+ide
+     }
+     console.log(ide);
+}
+console.log(username);
