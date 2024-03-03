@@ -36,8 +36,23 @@ if(true){
     const username='ankit'
      if(username==='ankit'){
         const ide='vscode'
-        return username+ide
+        console.log(username+ide);
      }
-     console.log(ide);
+    //  console.log(ide);
+    console.log(username);
 }
-console.log(username);
+// console.log(username);
+
+
+// +++++ interesting++++
+
+function addone(num){
+    return num+1
+}
+addone(5)
+
+
+const addTwo=function(num){
+    return num+2
+}
+addTwo(5)
