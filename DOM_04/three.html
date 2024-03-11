@@ -10,6 +10,7 @@
 </body>
 <script>
     const div=document.createElement('div')
+    const h2=document.createElement('h2')
     console.log(div);
     div.className="main"
     div.id=Math.round(Math.random()*10+1)
@@ -17,8 +18,17 @@
     div.style.backgroundColor='purple'
     div.style.padding='12px'
     const addText=document.createTextNode('chai aur code')
-    div.appendChild(addText)
+    h2.appendChild(addText)
+    div.appendChild(h2)
  document.body.appendChild(div)
+ const h1=document.createElement('h1')
+ h1.id=Math.round(Math.random()*10+1)
+ h1.style.backgroundColor='orange'
+ const addtext2=document.createTextNode('hello world')
+h1.appendChild(addtext2)
+div.appendChild(h1)
+document.body.appendChild(div)
+
 
 </script>
 </html>
