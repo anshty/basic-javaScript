@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html||event</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>amazing image</h2>
+    <div id="image">
+        <ul>
+        <li><img id='india'src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg" width="100px" alt="nature image"></li>
+        <li><img id="japan" src="https://th.bing.com/th/id/R.f25a598d6221a03e67576d1e499a6210?rik=zr6T%2b4ScRkhkMg&riu=http%3a%2f%2f3.bp.blogspot.com%2f_cY1l96f0e6c%2fTMVlWmo0T-I%2fAAAAAAAAAOk%2fa_Yp3yIR11k%2fs1600%2f214.jpg&ehk=09cDkc29vAzQFkV1%2b4dS5r2EMKzR5pHjxJ88P4s2wmE%3d&risl=&pid=ImgRaw&r=0" width="100px" alt="nature image"></li>
+        <li><img id="korea" src="https://th.bing.com/th/id/OIP.XTdil75iMBQs8D6Ycva_1QHaEI?w=4000&h=2236&rs=1&pid=ImgDetMain" width="100px" alt="nature image"></li>
+        <li><img id="USA" src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg" width="100px" alt="nature image"></li>
+        <li> <a style="color: azure;" href="https://www.bing.com/ck/a?!&&p=5096d91f47898351JmltdHM9MTcxMDYzMzYwMCZpZ3VpZD0zZDFiYTIxNS0zZmQ5LTYzNWUtMGVkZC1iM2RlM2U2YjYyMmYmaW5zaWQ9NTIxNw&ptn=3&ver=2&hsh=3&fclid=3d1ba215-3fd9-635e-0edd-b3de3e6b622f&psq=google.com&u=a1aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&ntb=1" >google</a></li>
+        </ul>   
+     </div>
+</body>
+<script>
+    const korea=document.getElementById('korea')
+    // korea.onclick=()=>alert('korea is a beautiful country')
+    korea.addEventListener('click',(e)=>{
+        //   alert('korea is beautiful')
+        console.log(e);
+    },false)
+// type, timestamp,defaultPrevented 
+// target,toElement,srcElement,currentTarget
+// interview position related:- clientX,clientY,screenX,screenY
+// altkey,ctrlkey,shiftkey,keycode
+
+// document.getElementById('image').addEventListener('click',(e)=>{
+//     console.log('clicked inside ul');
+// },false)
+// document.getElementById('india').addEventListener('click',(e)=>{
+//     console.log('clicked in india');
+//     e.stopPropagation()
+// },false)
+// document.getElementById('google').addEventListener('click',(e)=>{
+//     e.preventDefault()
+//     e.stopPropagation()
+//     console.log('clicked in link');
+// })
+
+document.querySelector('#image').addEventListener('click',function(e){
+    console.log(e.target.parentNode)
+    let removeit=e.target.parentNode
+    // removeit.remove()
+    removeit.parentNode.removeChild(removeit)
+
+},false)
+
+</script>
+</html>
