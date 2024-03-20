@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom revision</title>
+</head>
+<body style="background-color: #212121;color: aliceblue;">
+
+    <ul class="name">
+        <li>ankit</li>
+        <li>ayush</li>
+        <li>dipanshu</li>
+        <li>rahul</li>
+    </ul>
+    
+    
+</body>
+<script>
+    function name(name) {
+        const li=document.createElement('li')
+        li.innerHTML=`amit`
+         const addname=document.querySelector('.name')
+      
+         addname.appendChild(li)
+        
+       
+    }
+    name()
+
+    function addname(sectype) {
+
+        const li=document.createElement('li')
+        li.innerHTML=`${sectype}`
+
+        document.querySelector('.name').appendChild(li)
+        
+    }
+    addname('ayan')
+
+    function add3name(name) {
+
+        const li= document.createElement('li')
+        const nameenter=document.createTextNode(name)
+        li.appendChild(nameenter)
+        document.querySelector('.name').appendChild(li)
+        
+    }
+    add3name('ankit')
+
+    const editname=document.querySelector('li:nth-child(1)')
+    const newli=document.createElement('li')
+    newli.textContent='ansh'
+    editname.replaceWith(newli)
+    function editname1(name){
+        const editname=document.querySelector('li:nth-child(3)')
+        const newli=document.createElement('li')
+        newli.textContent=`${name}`
+      editname.replaceWith(newli)
+
+    }
+    editname1('ansh')
+    
+</script>
+</html>
